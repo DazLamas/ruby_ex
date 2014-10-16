@@ -1,12 +1,15 @@
-text = "Sarah, have a nice day"
+def sorting(text)
 
 array_text = text.scan(/[\w']+/)
 
 order_text = array_text.map{
 	|i| i.downcase
 
-	}.sort
+	}.sort.join(" ")
 
-puts order_text
+puts "- #{text} - makes this sorted array: #{order_text}"
+
+end
+
 
 
